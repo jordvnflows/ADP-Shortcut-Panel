@@ -1,0 +1,227 @@
+/* * { outline: 1px solid red} */
+
+:root {
+	--primary-color: #272822;
+	--secondary-color: #1e1f1c;
+	--pfont-color: #e6db74;
+	--hfont-color: #8ae22e;
+	--hfonts-color: #A4E85C;
+	--accent-color: #3bb8ef;
+	--fontdef-color: #f92672;
+	--fontuse-color: #ae81ff;
+
+}
+
+body {
+	background-color: var(--primary-color);
+	font-family: 'Taub Sans Regular';
+}
+
+input {
+	font-family: 'Taub Sans Regular';
+}
+
+button {
+	font-family: 'Taub Sans Regular';
+}
+
+label {
+	color: var(--accent-color);
+	font-size: 1em;
+}
+
+textarea {
+	text-align: left;
+	resize: none;
+	height: 3em;
+	transition: all 0.5s ease;
+}
+
+textarea:focus {
+	height: 5em;
+	transition: all 0.5s ease;
+	overflow-y: visible;
+}
+
+.header-container {
+	border-radius: 1em;
+	position: sticky;
+	padding: 0.5em;
+	background-color: var(--secondary-color);
+}
+
+.header-content {
+	display: grid;
+	height: 3em;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	text-align: center;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.header-content img {
+	height: 3em;
+	grid-column: 1;
+}
+
+#searchbar {
+	grid-column: 3;
+	height: 2.25em;
+	width: 25em;
+	border-radius: 1em;
+	padding-left: 1em;
+	float: right;
+}
+
+#searchbutton {
+	filter: invert(1);
+	grid-column: 4;
+	height: 2.25em;
+	width: 2.25em;
+	margin-right: 0.5em;
+	float: right;
+}
+
+#searchbutton:hover {
+	filter: invert(0.8);
+}
+
+#searchbutton:active {
+	transform: translateY(0.1275em);
+}
+
+.tab {
+	width: 1em;
+}
+
+.everything-container {
+	padding: 1em;
+}
+
+.ref-container {
+	margin-top: 1em;
+	display: grid;
+	height: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(auto-fit);
+	grid-gap: 1em;
+}
+
+#aportbutton, #cehbutton, #asspbutton, #citrixbutton, #pesbutton, #pswbutton {
+	height: 15em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1em;
+	padding: 1em;
+	background-color: var(--secondary-color);
+	border-style: none;
+}
+
+#aportbutton:hover {
+	background-color: var(--primary-color);
+	cursor: pointer;
+	box-shadow: 0 0 0.75em 0.1em var(--secondary-color);
+	
+}
+
+#aportbutton img {
+	height: 5em;
+}
+
+#aportbutton:active {
+	transform: translateY(0.1275em);
+}
+
+#aportbutton p {
+	color: #dc2033;
+}
+
+#cehbutton:hover {
+	background-color: var(--primary-color);
+	cursor: pointer;
+	box-shadow: 0 0 0.75em 0.1em var(--secondary-color);
+	
+}
+
+#cehbutton img {
+	height: 5em;
+}
+
+#cehbutton:active {
+	transform: translateY(0.1275em);
+}
+
+#asspbutton:hover {
+	background-color: var(--primary-color);
+	cursor: pointer;
+	box-shadow: 0 0 0.75em 0.1em var(--secondary-color);
+	
+}
+
+#asspbutton img {
+	height: 5em;
+}
+
+#asspbutton p {
+	color: #dc2033;
+}
+
+#asspbutton:active {
+	transform: translateY(0.1275em);
+}
+
+#citrixbutton:hover {
+	background-color: var(--primary-color);
+	cursor: pointer;
+	box-shadow: 0 0 0.75em 0.1em var(--secondary-color);
+	
+}
+
+#citrixbutton img {
+	height: 5em;
+}
+
+#citrixbutton:active {
+	transform: translateY(0.1275em);
+}
+
+#pesbutton:hover {
+	background-color: var(--primary-color);
+	cursor: pointer;
+	box-shadow: 0 0 0.75em 0.1em var(--secondary-color);
+	
+}
+
+#pesbutton img {
+	height: 5em;
+}
+
+#pesbutton:active {
+	transform: translateY(0.1275em);
+}
+
+#pswbutton:hover {
+	background-color: var(--primary-color);
+	cursor: pointer;
+	box-shadow: 0 0 0.75em 0.1em var(--secondary-color);
+	
+}
+
+#pswbutton img {
+	height: 5em;
+}
+
+#pswbutton:active {
+	transform: translateY(0.1275em);
+}
+
+#pswbutton p {
+	color: #dc2033;
+}
+
+@media screen and (max-width: 50em) {
+	
+}
