@@ -1,8 +1,12 @@
 # ADP-Shortcut-Panel
 ADP CS RS Shortcut Panel
 
-  To open the shortcut panel, you will need to click on index.html
-    - you may save the files, but updates are made on here and so if there's any issues with the panel it may be because it's an older version.
+To make things easier to access:
+   1) Navigate to the website or web page to pin to your home screen 
+   2) Tap the menu icon (3 dots in upper right-hand corner) 
+   3) Tap Add to homescreen 
+   4) Choose a name for the website shortcut 
+   5) Chrome will add it to your home screen.
     
   A FEW THINGS TO CONSIDER:
     -Opening from GitHub:
