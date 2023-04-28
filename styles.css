@@ -25,71 +25,8 @@ button {
 	font-family: 'Taub Sans Regular';
 }
 
-label {
-	color: var(--accent-color);
-	font-size: 1em;
-}
-
-textarea {
-	text-align: left;
-	resize: none;
-	height: 3em;
-	transition: all 0.5s ease;
-}
-
-textarea:focus {
-	height: 5em;
-	transition: all 0.5s ease;
-	overflow-y: visible;
-}
-
-.header-container {
-	border-radius: 1em;
-	position: sticky;
-	padding: 0.5em;
-	background-color: var(--secondary-color);
-}
-
-.header-content {
-	display: grid;
-	height: 3em;
-	grid-auto-flow: column;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	text-align: center;
-	padding-left: 2em;
-	padding-right: 2em;
-}
-
-.header-content img {
-	height: 3em;
-	grid-column: 1;
-}
-
-#searchbar {
-	grid-column: 3;
-	height: 2.25em;
-	width: 25em;
-	border-radius: 1em;
-	padding-left: 1em;
-	float: right;
-}
-
-#searchbutton {
-	filter: invert(1);
-	grid-column: 4;
-	height: 2.25em;
-	width: 2.25em;
-	margin-right: 0.5em;
-	float: right;
-}
-
-#searchbutton:hover {
-	filter: invert(0.8);
-}
-
-#searchbutton:active {
-	transform: translateY(0.1275em);
+a {
+	font-family: 'Taub Sans Regular';
 }
 
 .tab {
@@ -109,7 +46,7 @@ textarea:focus {
 	grid-gap: 1em;
 }
 
-#aportbutton, #cehbutton, #asspbutton, #citrixbutton, #pesbutton, #pswbutton {
+#aportbutton, #cehbutton, #asspbutton, #citrixbutton, #pesbutton, #pswbutton, #blankbutton, #lexbutton {
 	height: 15em;
 	display: flex;
 	justify-content: center;
@@ -220,6 +157,49 @@ textarea:focus {
 
 #pswbutton p {
 	color: #dc2033;
+}
+
+.ReadMe {
+	padding: 2em;
+	background-color: var(--primary-color);
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+#lexbutton:hover {
+	background-color: var(--primary-color);
+	cursor: pointer;
+	box-shadow: 0 0 0.75em 0.1em var(--secondary-color);
+	
+}
+
+#lexbutton img {
+	height: 5em;
+}
+
+#lexbutton:active {
+	transform: translateY(0.1275em);
+}
+
+#blankbutton:hover {
+	background-color: var(--primary-color);
+	cursor: pointer;
+	box-shadow: 0 0 0.75em 0.1em var(--secondary-color);
+	
+}
+
+#blankbutton:active {
+	transform: translateY(0.1275em);
+}
+
+.ReadMe {
+	text-align: center;
+}
+
+.ReadMe p {
+	color: var(--accent-color);
+	text-decoration: none;
 }
 
 @media screen and (max-width: 50em) {
