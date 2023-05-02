@@ -1,4 +1,4 @@
-/* * { outline: 1px solid red} */
+ /* * { outline: 1px solid red}  */
 
 :root {
 	--primary-color: #272822;
@@ -46,13 +46,28 @@ a {
 	grid-gap: 1em;
 }
 
-#aportbutton, #cehbutton, #asspbutton, #citrixbutton, #pesbutton, #pswbutton, #blankbutton, #lexbutton {
-	height: 15em;
+#aportbutton, #cehbutton, #asspbutton, #citrixbutton, #pesbutton, #pswbutton, #lexbutton {
+	height: 12em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 1em;
 	padding: 1em;
+	background-color: var(--secondary-color);
+	border-style: none;
+}
+
+.word-grid {
+	height: fit-content;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(auto-fit);
+	row-gap: .25em;
+	column-gap: 2em;
+	border-radius: 1em;
+	padding: 2em;
+	justify-content: center;
+	align-items: center;
 	background-color: var(--secondary-color);
 	border-style: none;
 }
@@ -182,15 +197,29 @@ a {
 	transform: translateY(0.1275em);
 }
 
-#blankbutton:hover {
-	background-color: var(--primary-color);
-	cursor: pointer;
-	box-shadow: 0 0 0.75em 0.1em var(--secondary-color);
-	
+.word-grid button {
+	display: flex;
+	height: 4em;
+	width: auto;
+	background-color: var(--secondary-color);
+	border-style: none;
 }
 
-#blankbutton:active {
-	transform: translateY(0.1275em);
+.word-grid p {
+	color: var(--accent-color);
+}
+
+#word-elem p {
+	font-size: 0.85em;
+}
+
+#word-elem img {
+	height: 4em;
+	width: 4.5em;
+}
+
+#word-elem:hover {
+	cursor: pointer;
 }
 
 .ReadMe {
